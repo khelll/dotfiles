@@ -1,16 +1,24 @@
 DOTFILES_HOME=~/dotfiles-local/
 
 # zsh
-source $DOTFILES_HOME/oh-my-zsh
+# oh my zsh!
+if [ -d "~/.oh-my-zsh" ]; then
+  source $DOTFILES_HOME/oh-my-zsh
+fi
+
 for function in $DOTFILES_HOME/zsh/functions/*; do
   source $function
 done
 
 # aliases
-source $DOTFILES_HOME/aliases.private.local
+if [ -d "$DOTFILES_HOME/aliases.private.local" ]; then
+  source $DOTFILES_HOME/aliases.private.local
+fi
 
 # exports
-source $DOTFILES_HOME/exports.private.local
+if [ -d "$DOTFILES_HOME/exports.private.local" ]; then
+  source $DOTFILES_HOME/exports.private.local
+fi
 
 # coreutils
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

@@ -1,0 +1,35 @@
+
+### version control systems
+# brew options git
+brew 'curl', args: ['with-openssl']
+brew  'git', args: ['with-pcre', 'with-brewed-curl', 'with-brewed-openssl']
+brew  'hub'
+
+### http tools
+brew  'httpie'
+brew  'homebrew/apache/ab'
+brew  'jq'
+
+### gnu userland utils
+tap 'homebrew/dupes'
+brew  'ack'
+brew  'binutils'
+brew  'coreutils'
+brew  'diffutils'
+brew  'findutils'
+brew  'gawk'
+brew  'gnu-indent'
+brew  'gnu-sed'
+brew  'gnu-tar'
+brew  'gnutls'
+brew  'grep' # gnu grep is in homebrew/dupes
+brew  'gzip'
+brew  'less'
+brew  'htop'
+brew  'fzf'
+
+### dbs
+brew  'mysql@5.7', restart_service: :changed
+brew  'postgresql@9.6', restart_service: :changed
+brew  'memcached', restart_service: :changed
+brew  'redis', restart_service: :changed

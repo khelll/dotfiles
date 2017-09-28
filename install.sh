@@ -10,5 +10,5 @@ brew install rcm
 env RCRC=$HOME/dotfiles/rcrc rcup
 
 # install brew stuff
-cd ~/dotfiles-local && ./brew_install_stuff.sh
+./brew_install_stuff.sh
 
