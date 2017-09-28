@@ -1,0 +1,17 @@
+DOTFILES_HOME=~/dotfiles-local/
+
+# zsh
+source $DOTFILES_HOME/oh-my-zsh
+for function in $DOTFILES_HOME/zsh/functions/*; do
+  source $function
+done
+
+# aliases
+source $DOTFILES_HOME/aliases.private.local
+
+# exports
+source $DOTFILES_HOME/exports.private.local
+
+# coreutils
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
