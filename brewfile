@@ -1,6 +1,8 @@
 
+### shells
+brew 'zsh-completions'
+
 ### version control systems
-# brew options git
 brew 'curl', args: ['with-openssl']
 brew  'git', args: ['with-pcre', 'with-brewed-curl', 'with-brewed-openssl']
 brew  'hub'
