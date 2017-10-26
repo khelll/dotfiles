@@ -2,7 +2,7 @@ DOTFILES_HOME=~/dotfiles-local/
 
 # zsh
 # oh my zsh!
-if [ -d "~/.oh-my-zsh" ]; then
+if [ -f "~/.oh-my-zsh" ]; then
   source $DOTFILES_HOME/oh-my-zsh
 fi
 
@@ -11,12 +11,12 @@ for function in $DOTFILES_HOME/zsh/functions/*; do
 done
 
 # aliases
-if [ -d "$DOTFILES_HOME/aliases.private.local" ]; then
+if [ -f "$DOTFILES_HOME/aliases.private.local" ]; then
   source $DOTFILES_HOME/aliases.private.local
 fi
 
 # exports
-if [ -d "$DOTFILES_HOME/exports.private.local" ]; then
+if [ -f "$DOTFILES_HOME/exports.private.local" ]; then
   source $DOTFILES_HOME/exports.private.local
 fi
 
