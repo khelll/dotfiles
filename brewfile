@@ -1,4 +1,7 @@
 
+### docker
+brew 'docker'
+
 ### shells
 brew 'zsh-completions'
 
