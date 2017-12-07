@@ -30,11 +30,16 @@ brew  'gzip'
 brew  'less'
 brew  'htop'
 brew  'fzf'
+brew  'watch'
 
 ### finders
 brew 'ag'
 brew 'fd'
 brew 'ack'
+
+### text
+brew 'gettext'
+
 
 ### dbs
 brew  'mysql@5.7', restart_service: :changed
