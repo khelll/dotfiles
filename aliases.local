@@ -1,3 +1,5 @@
 alias be="bundle exec"
-
+alias k="kubectl --namespace=$KUBECTL_NAMESPACE"
+alias kex="kubectli --namespace=$KUBECTL_NAMESPACE  -it exec"
+alias ks="kubectl --namespace=$KUBECTL_NAMESPACE config get-contexts"
 eval "$(hub alias -s)"

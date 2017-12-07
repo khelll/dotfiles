@@ -1,0 +1,9 @@
+function awsp {
+  export AWS_PROFILE=$1
+  echo "Switching to the $1 AWS profile"
+}
+
+function kn {
+  export KUBECTL_NAMESPACE=$1
+  echo "Switching to the $1 namespace"
+}
