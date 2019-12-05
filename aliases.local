@@ -1,5 +1,40 @@
+# ruby
 alias be="bundle exec"
+
+# kubernetes
 alias k="kubectl --namespace=$KUBECTL_NAMESPACE"
-alias kex="kubectli --namespace=$KUBECTL_NAMESPACE  -it exec"
-alias ks="kubectl --namespace=$KUBECTL_NAMESPACE config get-contexts"
+alias kex="kubectl --namespace=$KUBECTL_NAMESPACE  -it exec"
+alias d="docker"
+alias dc="docker-compose"
+
+
+
+# git
 eval "$(hub alias -s)"
+alias g='git'
+alias gst='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git pull'
+alias gup='git pull --rebase'
+alias gp='git push'
+alias gd='git diff'
+alias gco='git checkout'
+alias gco!='git checkout -b'
+alias gcm='git checkout master'
+alias gc='git commit -v'
+alias gc!='git commit -v --amend'
+alias gca='git commit -v -a'
+alias gca!='git commit -v'
+alias gb='git branch'
+alias gba='git branch -a'
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
+alias gk='gitk --all --branches'
+alias gsts='git stash show --text'
+alias gsta='git stash'
+alias gstp='git stash pop'
+alias gstd='git stash drop'
+alias gpr='git pull-request'
+alias gbr='git browse'
+alias gm='git merge --no-f'
